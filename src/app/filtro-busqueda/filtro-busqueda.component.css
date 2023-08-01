@@ -1,0 +1,43 @@
+.mdc-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 5px 5px 5px 5px;
+  width: 300px;
+  background-color: orangered;
+  color: white;
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+h1, h4{
+  font-family: 'Wix Madefor Display', sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+/* Estilo para el contenedor de los botones de opción */
+.form-check {
+  margin-bottom: 10px;
+}
+
+/* Estilo para el botón de opción */
+.form-check-input {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+/* Estilo para la etiqueta del botón de opción */
+.form-check-label {
+  font-size: 16px;
+}
+
+/* Estilo para el botón de opción seleccionado */
+.form-check-input:checked {
+  background-color: #000000;
+  border-color: #ffffff;
+}
+
+/* Estilo para el color del texto de la etiqueta del botón de opción seleccionado */
+.form-check-input:checked + .form-check-label {
+  color: #000000;
+}

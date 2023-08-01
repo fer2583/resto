@@ -1,0 +1,11 @@
+<mat-card class="grow" class="producto" *ngFor="let plato of platos">
+  <div><img class="imagenProducto" [src]="plato.image"></div>
+  <div class="texto">
+  <div><strong>{{plato.title}}</strong></div>
+  <div class="vegetariano">Vegetariano:<mat-icon class="rojo" *ngIf="!plato.vegetarian; else elseBlock">clear</mat-icon>
+    <ng-template #elseBlock><mat-icon class="verde">check</mat-icon></ng-template> </div>
+  <div class="gluten">GlutenFree: <mat-icon class="rojo" *ngIf="!plato.glutenFree; else Block">clear</mat-icon>
+    <ng-template #Block><mat-icon class="verde">check</mat-icon></ng-template></div>
+  </div>
+  <button mat-raised-button (click)="verDetalle(plato)" routerLink="/productos">Ver</button>
+</mat-card>

@@ -1,0 +1,8 @@
+<mat-toolbar>
+  Bienvenidos A La Carta
+<span>
+  <mat-icon  routerLink = "/carrito" *ngIf="productosSrv.listaProductos.length >0" class="carrito" matBadge={{productosSrv.listaProductos.length}} matBadgeColor="warn">shopping_cart</mat-icon>
+  <button class="boton" mat-raised-button (click)="userSrv.logout()" routerLink="/login"><mat-icon>exit_to_app</mat-icon></button>
+</span>
+</mat-toolbar>
+

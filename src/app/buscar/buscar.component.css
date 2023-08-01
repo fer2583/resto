@@ -1,0 +1,82 @@
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 99%;
+  background-color: rgb(65, 64, 64);
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 99%;
+  margin: auto;
+  background-image: url(../../assets/Surf-Bar-.jpg);
+  opacity: 90%;
+}
+
+.menu{
+  display: none;
+}
+
+.busqueda{
+  height: 43px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 60px;
+  margin-left: -39px;
+  background-color: orangered;
+  border-radius: 4px;
+}
+.mat-icon{
+  color: white;
+  margin-left: 8px;
+  margin-top: 2px;
+  font-size: 30px;
+  display: inline-table;
+}
+
+.buscador{
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 50%;
+  min-width: 42vh;
+}
+
+app-lista-productos{
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.maqueta{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+
+@media (max-width:420px){
+  app-filtro-busqueda{
+    display: none;
+  }
+
+.menu {
+  display: flex;
+}
+.mat-menu{
+  background-color: aqua;
+}
+
+}
+

@@ -1,0 +1,14 @@
+<mat-divider class="linea"></mat-divider>
+<h1><strong>Nuestros Platos Sugeridos</strong></h1>
+<mat-divider></mat-divider>
+<div class="contenedor">
+<mat-card *ngFor="let producto of productosRelacionados">
+  <div><img [src]="producto.image"></div>
+  <div><strong>{{producto.title}}</strong></div>
+  <button mat-raised-button (click)="mostrar(producto)"  routerLink="/productos">Ver</button>
+
+
+</mat-card>
+
+</div>
+<mat-divider class="linea"></mat-divider>

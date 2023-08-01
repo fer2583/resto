@@ -1,0 +1,67 @@
+.login {
+  width: 98%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 4px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background-image: url(../../assets/Surf-Bar-.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login h1 {
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 5vw;
+  color: white;
+}
+
+.login h4 {
+  font-size: 2vw;
+  margin-top: 4vh;
+  color: white;
+}
+
+.marco {
+  background-color: gold;
+  width: 40%;
+  height: auto;
+  margin-top: 4vh;
+  opacity: 90%;
+  padding: 10px;
+}
+
+.marco button {
+  width: 30vw;
+  margin-top: 2px;
+  background: #2c2c2c;
+  color: gold;
+
+}
+
+mat-form-field {
+  width: 80%;
+  margin: 5px;
+}
+
+mat-card-title {
+  color: rgb(0, 0, 0);
+}
+
+
+/* Media query para dispositivos con un ancho máximo de 420px */
+@media (max-width: 420px) {
+  .marco {
+    background-color: gold;
+    width: 80%;
+    height: auto;
+    margin-top: 4vh;
+    opacity: 90%;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,30 @@
+mat-toolbar {
+  background-color: rgb(56, 56, 56);
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 3px;
+  color: gold;
+  width: 100%;
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.carrito{
+  display: block;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+span{
+  display: flex;
+  align-content: flex-end;
+  align-items: center;
+}
+
+.boton {
+  font-size: 14px;
+  padding: 2px 4px;
+  height: fit-content;
+  min-width: unset;
+}
+
+

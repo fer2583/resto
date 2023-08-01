@@ -1,0 +1,59 @@
+<mat-card>
+
+  <div class="detalle">
+  <mat-card-title>Su Menú</mat-card-title>
+  <h4>Tenga en cuenta que para poder confirmar el menú, el mismo debera contar
+    con dos platos vegetarianos y dos que no lo sean!.</h4>
+    <h5> Recuerde que desde "La Carta" nos preocupamos
+    por el equilibrio alimenticio de nuestros clientes.</h5>
+
+   </div>
+  <mat-table [dataSource]="clientes$" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="Plato">
+      <mat-header-cell *matHeaderCellDef> Plato </mat-header-cell>
+      <mat-cell *matCellDef="let carrito"> {{carrito?.title}} </mat-cell>
+    </ng-container>
+
+     <ng-container matColumnDef="HealthScore">
+      <mat-header-cell *matHeaderCellDef> HealthScore</mat-header-cell>
+      <mat-cell *matCellDef="let carrito"> {{carrito?.healthScore}} Pts.</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Preparación">
+      <mat-header-cell *matHeaderCellDef> Preparación </mat-header-cell>
+      <mat-cell *matCellDef="let plato"> {{plato.readyInMinutes }} Min. </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Vegetariano">
+      <mat-header-cell *matHeaderCellDef> Vegetariano </mat-header-cell>
+      <mat-cell *matCellDef="let plato"> <mat-icon class="rojo" *ngIf="!plato.vegetarian; else elseBlock">clear</mat-icon>
+        <ng-template #elseBlock><mat-icon class="verde">check</mat-icon></ng-template> </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Costo">
+      <mat-header-cell *matHeaderCellDef> Costo </mat-header-cell>
+      <mat-cell *matCellDef="let plato"> {{plato.pricePerServing | currency}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Eliminar">
+      <mat-header-cell *matHeaderCellDef> Eliminar </mat-header-cell>
+      <mat-cell *matCellDef="let plato"> <button mat-raised-button color="primary" (click)="productosSrv.eliminar(plato.id)"><mat-icon>remove_shopping_cart</mat-icon></button></mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  <div class="contenedor">
+  <mat-card-subtitle><mat-icon>favorite</mat-icon>HealthScore Total: {{productosSrv.health$ | async}}</mat-card-subtitle>
+  <mat-card-subtitle><mat-icon>access_time</mat-icon>Tiempo de elaboración: {{productosSrv.time$ | async}}</mat-card-subtitle>
+  <mat-card-subtitle><mat-icon>monetization_on</mat-icon>Costo Total: {{ productosSrv.totalPedido$ | async | currency }} </mat-card-subtitle>
+  </div>
+  <div class="confirmar">
+    <button class="pedido" mat-raised-button (click)="confirma()">Confirma Pedido</button>
+    <button class="volver" mat-raised-button routerLink="/buscar">Volver</button>
+  </div>
+
+ </mat-card>
+ <app-footer></app-footer>

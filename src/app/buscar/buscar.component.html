@@ -1,0 +1,25 @@
+<div class="maqueta">
+ <app-filtro-busqueda></app-filtro-busqueda>
+  <div>
+   <mat-card class="contenedor">
+    <input class="buscador" placeholder="Busque su plato preferido" [(ngModel)]="busqueda"  value="">
+    <button  class="busqueda" mat-raised-button (click)="buscar()" ><mat-icon>search</mat-icon></button>
+
+    <button class="menu" mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="seleccionarMenu('vegan')">Vegano</button>
+      <button mat-menu-item (click)="seleccionarMenu('vegetarian')">Vegetariano</button>
+      <button mat-menu-item (click)="seleccionarMenu('gluten')">GlutenFree</button>
+      <button mat-menu-item (click)="seleccionarMenu('healthy')">Healthy</button>
+      <button mat-menu-item (click)="seleccionarMenu('mediterraneo')">Mediterraneo</button>
+      <button mat-menu-item (click)="seleccionarMenu('asian')">Asiatico</button>
+      <button mat-menu-item (click)="seleccionarMenu('mexican')">Mexicano</button>
+
+    </mat-menu>
+   </mat-card>
+
+    <app-lista-productos [platos]="platosBusqueda"></app-lista-productos>
+  </div>
+</div>
+  <app-footer></app-footer>
+

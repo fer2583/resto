@@ -1,0 +1,52 @@
+.mat-mdc-card {
+  margin-bottom: 15px;
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+mat-card.mat-mdc-card.mdc-card.producto {
+  width: 23%;
+ justify-content: space-around;
+ font-family: 'Wix Madefor Display', sans-serif;
+}
+
+mat-card.mat-mdc-card.mdc-card.producto:hover{
+box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.75);
+-webkit-box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.75);
+}
+
+.texto{
+  margin-left: 5px;
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.imagenProducto{
+  border-radius: 10px;
+  width: 90%;
+  margin: 5%;
+}
+
+.mat-mdc-raised-button {
+  background-color: #ef2323;
+  color: white;
+  width: 95%;
+  margin:auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.rojo{
+  color: tomato;
+}
+.verde{
+  color: green;
+}
+
+.vegetariano{
+  display: flex;
+}
+
+@media (max-width: 420px) {
+
+  mat-card.mat-mdc-card.mdc-card.producto {
+    width: 45%;
+  }
+}

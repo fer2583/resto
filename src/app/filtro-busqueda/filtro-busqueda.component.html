@@ -1,0 +1,41 @@
+<mat-card>
+  <h1><strong>Busqueda Rápida</strong></h1>
+  <h4><strong>Categoria</strong></h4>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="categoria" id="vegano" (click)="seleccionarMenu('vegan')">
+    <label class="form-check-label" for="vegano">Vegano</label>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="categoria" id="vegetariano" (click)="seleccionarMenu('vegetarian')">
+    <label class="form-check-label" for="vegetariano">Vegetariano</label>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="categoria" id="glutenFree" (click)="seleccionarMenu('gluten')">
+    <label class="form-check-label" for="glutenFree">GlutenFree</label>
+  </div>
+  <mat-divider></mat-divider>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="categoria" id="healthy" (click)="seleccionarMenu('healthy')">
+    <label class="form-check-label" for="healthy">Healthy</label>
+  </div>
+  <mat-divider></mat-divider>
+
+  <h4><strong>Menu Regional</strong></h4>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="menuRegional" id="mediterraneo" (click)="seleccionarMenu('mediterraneo')">
+    <label class="form-check-label" for="mediterraneo">Mediterraneo</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="menuRegional" id="asiatico" (click)="seleccionarMenu('asian')">
+    <label class="form-check-label" for="asiatico">Asiatico</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="menuRegional" id="mexicano" (click)="seleccionarMenu('mexican')">
+    <label class="form-check-label" for="mexicano">Mexicano</label>
+  </div>
+
+</mat-card>

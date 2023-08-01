@@ -1,0 +1,103 @@
+mat-card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 65%;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  text-align: center;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.mat-mdc-raised-button{
+  background-color: tomato;
+}
+
+mat-card-subtitle {
+  color: white;
+  display: flex;
+  margin: 5px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+mat-card-title {
+  color: white;
+}
+
+img {
+  border-radius: 10px;
+  margin-left: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+button {
+
+  margin: auto;
+}
+
+.compra{
+  background-color: rgb(255, 255, 255);
+  width: 130px;
+}
+
+.detalle{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.mat-icon{
+  margin-right: 5px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(41, 41, 41);
+  width: 100%;
+}
+
+.confirmar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.pedido{
+  background-color: #3bad3c;
+  color:white
+
+}
+
+.volver{
+  background-color: #d85740;
+  color:white
+}
+
+
+@media (max-width:420px){
+  mat-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 8px;
+    background-color: #3ab787;
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+}
