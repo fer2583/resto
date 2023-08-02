@@ -38,28 +38,3 @@ export class LoginComponent {
 
   };
 }
-
-
-
-  //ingresar(): any {
-    //let bodytest = { email: this.loginForm.value.email, password: this.loginForm.value.contraseña}
-    //this.http.post("http://challenge-react.alkemy.org", bodytest).subscribe(
-    //(data: any) => {
-      //localStorage.setItem('token', data.token);
-
-        //if(localStorage.length != 0){
-          //this.usuario = this.loginForm.value.email}
-        //Swal.fire({position: 'top-end', icon: 'success', title: 'Bienvenido A la Carta' +" " + this.usuario,
-          //        showConfirmButton: false, timer: 1800,});
-        //this.router.navigate(['/buscar'])
-        //},
-
-          //(error: HttpErrorResponse)=> {
-          //if(error.status == 401)
-          //{ Swal.fire("Usuario y/o Contraseña incorrecto"),
-            //console.log("ingrese usuario nuevamente")}
-        //});
-
-  //}
-
-
