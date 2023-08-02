@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "https://fer2583.github.io/alacarta2023/",
             "outputPath": "dist/alacarta2023",
             "index": "src/index.html",
             "main": "src/main.ts",
