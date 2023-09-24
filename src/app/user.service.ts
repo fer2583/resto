@@ -13,7 +13,7 @@ export class userService {
   constructor(private http: HttpClient, private router: Router) { }
 
   login(user: any): Observable<any> {
-    return this.http.post("http://challenge-react.alkemy.org", user);
+    return this.http.post("https://challenge-react.alkemy.org", user);
   }
 
   setToken(token: string) {
